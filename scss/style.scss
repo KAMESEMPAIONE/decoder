@@ -1,0 +1,79 @@
+@import './nullstyle';
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+html {
+    background: url(../img/footback.png) center center/cover no-repeat;
+}
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+    padding: 50px 0 0 0;
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.body {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 0 0 0;
+}
+
+textarea {
+    resize: none;
+    width: 570px;
+    height: 650px;
+    padding: 16px;
+    font-size: 17px;
+    border: 3px solid transparent;
+}
+
+#cipherGroup {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+}
+input {
+    width: 200px;
+    padding: 11px;
+    margin: 20px 0 20px;
+    font-size: 16px;
+    border: 3px solid transparent;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.codeButton {
+    padding: 10px;
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    transition: 300ms;
+    &:hover {
+        background: #464646;
+        color: #e3e3e3;
+    }
+}
+
+.inputWrap{
+    position: relative;
+    & i{
+        font-size: 17px;
+        position: absolute;
+        right: 9px;
+        top: 14px;
+        visibility: hidden;
+
+    }
+}
+
+.error {
+    border: 3px solid rgb(216, 27, 27);
+}
+.uncheckIcon {
+    color: rgb(216, 27, 27);
+}

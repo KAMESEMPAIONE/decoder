@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decoder</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/завантаження.png">
+    <script src="https://kit.fontawesome.com/efdee9cdb1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h1>Decoder</h1>
+            <div class="body">
+                <textarea id="inputCipher" placeholder="Enter text" maxlength="5000"></textarea>
+                <div class="parameters">
+                    <select name="cipherType" id="cipherGroup">
+                        <option value="caesar">Caesar cipher</option>
+                        <option value="vigenere">Vigenere cipher </option>
+                        <option value="autoKey">Auto-key cipher</option>
+                    </select>
+                    <p class="inputWrap">
+                        <input type="text" id="cipherKey" placeholder="Enter the key" maxlength="100">
+                        <i class="fa-solid fa-circle-xmark uncheckIcon"></i>
+                    </p>
+                    <div class="buttons">
+                        <button class='codeButton' id="encodeBut">Encode</button>
+                        <button class='codeButton' id="decodeBut">Decode</button>
+                    </div>
+                </div>
+                <textarea id="outputCipher" placeholder="Result" readonly></textarea>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
